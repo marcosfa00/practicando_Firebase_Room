@@ -15,7 +15,7 @@ import androidx.room.PrimaryKey
  * @property rentHotel Indica si la casa se ofrece en alquiler (true) o es un hotel (false).
  * @property price Precio asociado a la casa.
  */
-@Entity
+@Entity()
 data class Houses (
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     @ColumnInfo(name = "name") val name:String,

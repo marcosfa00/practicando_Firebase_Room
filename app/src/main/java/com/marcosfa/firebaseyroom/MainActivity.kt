@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.room.Room
 import com.marcosfa.firebaseyroom.Room.AppDatabase
+import com.marcosfa.firebaseyroom.View.SignIn
 import com.marcosfa.firebaseyroom.ViewModel.MyViewModel
 import com.marcosfa.firebaseyroom.ui.theme.FirebaseYRoomTheme
 
@@ -36,7 +37,7 @@ class MainActivity : ComponentActivity() {
                     val viewModel = MyViewModel(housedao)
 
 
-                    Greeting("Android")
+                    Greeting(viewModel)
                 }
             }
         }
@@ -44,17 +45,14 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun Greeting(vModel: MyViewModel) {
+   SignIn(vModel)
 }
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     FirebaseYRoomTheme {
-        Greeting("Android")
+     
     }
 }
