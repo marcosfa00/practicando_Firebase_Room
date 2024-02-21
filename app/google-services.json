@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "459067178834",
+    "project_id": "fir-yroom-edbad",
+    "storage_bucket": "fir-yroom-edbad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459067178834:android:68e2ea3bf045b64a63848b",
+        "android_client_info": {
+          "package_name": "com.marcosfa.firebaseyroom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt2I24xFgP4dPwEfo2SOKKx37leeVn9Ug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
